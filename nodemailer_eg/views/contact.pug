@@ -36,7 +36,7 @@ html(lang='en')
                 span.glyphicon.glyphicon-log-out
                 | Logout
     .container
-      form(method='POST', action='/vendors')
+      form(method='POST', action='contact/send')
         label.sr-only(for='fname') Name
         input#fname.form-control(name='fname', type='text', placeholder='Name', required='', autofocus='')
         label.sr-only(for='email') Email address

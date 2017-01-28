@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Registration page for vendors.')
+    meta(name='author', content='Basil Alias')
+    link(rel='icon', href='assets/favicon.png')
+    title (title)
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    link(href='https://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css', rel='stylesheet')
+   
+  body
+      br
+      form(method='POST', action='/send')
+        label.sr-only(for='fname') Name
+        input#fname.form-control(name='fname', type='text', placeholder='Name', required='', autofocus='')
+        label.sr-only(for='email') Email address
+        input#email.form-control(name='email', type='email', placeholder='Email address', required='')
+        label.sr-only(for='phone') Message
+        textarea#taid.form-control(form='testformid', name='taname', cols='35', wrap='soft', placeholder='Message')
+        br
+        input.btn.btn-lg.btn-primary.btn-block(type='submit', value='Send')
+ 
